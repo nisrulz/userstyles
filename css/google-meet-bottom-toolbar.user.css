@@ -1,0 +1,95 @@
+/* ==UserStyle==
+@name        Google Meet: Bottom Toolbar
+@namespace   0bmxa
+@version     1.2.0
+@homepageURL https://github.com/0bmxa/userstyles
+@updateURL   https://raw.githubusercontent.com/0bmxa/userstyles/main/css/google-meet-bottom-toolbar.user.css
+@license     MIT License
+@author      0bmxa  
+==/UserStyle== */
+
+@-moz-document domain("meet.google.com") {
+    /* Whole bottom toolbar */
+    .rG0ybd {
+        /* Force inside view frame */
+        transform: translate(0);
+        
+        /* Make transparent */
+        background: none;
+        box-shadow:none;
+    }
+    
+    
+    /* ===========================================
+        Left: Meeting name
+       =========================================== */
+    
+    /* Meeting name: smaller */
+    .jzP6rf > * {
+        transform: translateY(20px) translateX(-30px) scale(0.75) !important; 
+    }
+    
+    /* Text color: white */
+    .jzP6rf * {
+        color: white;
+    }
+    
+    /* Hide arrow up */
+    .tovz2b {
+        display: none;
+    }
+    
+    
+    /* ===========================================
+        Mid: Mute, Hang up, Video
+       =========================================== */
+    
+    /* Scale buttons to 75% */
+    .q2u11 {
+        transform: scale(0.75) translateY(20px) !important;
+    }
+    
+    /* Make buttons white (when not selected) */
+    .q2u11 div[role=button]:not([data-is-muted=true]) {
+        background: white;
+    }
+    
+    
+    /* ===========================================
+        Right
+       =========================================== */
+    
+    /* Hide 'Captions' */
+    .f0WtFf > .Q8K3Le {
+        display: none;
+    }
+    
+    /* 'Present Now' button  */
+    .f0WtFf > .uD3s5c {
+    /*     display: none; */
+        background: white;
+        border-radius: 10px;
+        transform: translateY(10px) translateX(40px) scale(0.55) !important;
+    }
+    .f0WtFf > .uD3s5c > * {
+        transform: scale(1.3);    
+    }
+    
+    /* Smaller 'Raise Hand' button */
+    .p2SYhf {
+        background: white;
+        border-radius: 10px;
+        transform: translateY(10px) translateX(90px) scale(0.55) !important;
+    }
+    /* Bigger 'Raise Hand' button icon */
+    .p2SYhf > div {
+        transform: scale(1.3);
+    }
+    
+    /* 'Settings' menu button */
+    .NlWrkb.snByac .DPvwYc {
+        background: white;
+        border-radius: 5px;
+        transform: translateY(10px) !important;
+    }
+}
