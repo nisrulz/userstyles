@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name        Google Meet: Better visible raised hands
+@namespace   0bmxa
+@version     1.0.0
+@homepageURL https://github.com/0bmxa/userstyles
+@updateURL   https://raw.githubusercontent.com/0bmxa/userstyles/main/css/google-meet-raised-hands.user.css
+@license     MIT License
+@author      0bmxa  
+==/UserStyle== */
+
+@-moz-document domain("meet.google.com") {
+    /* Raise Hand icon (on people's tiles): bigger & yellow */
+    .Gen1Z {
+        background: yellow;
+        transform: scale(1.8) translateX(-10px) translateY(-10px);
+    }
+    
+    /* Button in the toolbar: yellow when active */
+    .p2SYhf.SNTzF {
+        background: yellow !important;
+    }
+}
