@@ -9,14 +9,18 @@
 ==/UserStyle== */
 
 @-moz-document domain("meet.google.com") {
-    /* Raise Hand icon (on people's tiles): bigger & yellow */
+    /* Raise Hand icon (on people's tiles): bigger & red */
     .Gen1Z {
-        background: yellow;
+        background: #d00;
         transform: scale(1.8) translateX(-10px) translateY(-10px);
     }
-    
-    /* Button in the toolbar: yellow when active */
+
+    /* Button in the toolbar: red when active */
     .p2SYhf.SNTzF {
-        background: yellow !important;
+        background: #d00 !important;
+    }
+    .p2SYhf.SNTzF .OCZA0d,
+    .p2SYhf.SNTzF .sPXonc {
+        color: #fff !important;
     }
 }
