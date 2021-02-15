@@ -6,4 +6,6 @@ Stylus style for making Google Meet's raise hand button stand out
 - Goto Google Meet
 - Click on Stylus extension icon in top right corner in toolbar
 - Hover over `meet.google.com` inside the popup and click to add a style
+    - ![](img/sc_1.png)
 - Copy paste the style in opened box and save
+    - ![](img/sc_2.png)
